@@ -1,0 +1,154 @@
+{
+  "categories": [
+    { "id": "silhouette", "label": "실루엣 연작" },
+    { "id": "flower", "label": "꽃과 새" },
+    { "id": "panel", "label": "도판 · 병풍" },
+    { "id": "blue", "label": "청화 · 문양" }
+  ],
+  "works": [
+    {
+      "id": "silhouette-of-flowers",
+      "title": "Silhouette of flowers",
+      "year": "2025",
+      "medium": "Painting on porcelain",
+      "size": "각 21cm",
+      "category": "silhouette",
+      "featured": true,
+      "image": "/media/silhouette_of_flowers_01_claude2_20261010-0321.jpg",
+      "images": [],
+      "description": "색과 묘사를 덜어 내고 흑색 상회 안료의 형태와 대비만으로 꽃의 존재감을 드러낸 접시 연작."
+    },
+    {
+      "id": "flower-bouquet",
+      "title": "Flower bouquet",
+      "year": "2023",
+      "medium": "Painting on porcelain",
+      "size": "28cm",
+      "category": "flower",
+      "featured": true,
+      "image": "/media/flower_bouquet_claude2_20261010-0321.jpg",
+      "images": [],
+      "description": ""
+    },
+    {
+      "id": "autumn-lily",
+      "title": "가을 나리",
+      "year": "2023",
+      "medium": "Painting on porcelain",
+      "size": "28cm",
+      "category": "flower",
+      "featured": false,
+      "image": "/media/autumn_lily_claude2_20261010-0321.jpg",
+      "images": [],
+      "description": ""
+    },
+    {
+      "id": "bok",
+      "title": "복",
+      "year": "2023",
+      "medium": "Painting on porcelain",
+      "size": "26.5×31.5cm",
+      "category": "flower",
+      "featured": false,
+      "image": "/media/bok_claude2_20261010-0321.jpg",
+      "images": [],
+      "description": ""
+    },
+    {
+      "id": "oppose-time",
+      "title": "Oppose time",
+      "year": "2021",
+      "medium": "Painting on porcelain",
+      "size": "30cm",
+      "category": "blue",
+      "featured": true,
+      "image": "/media/oppose_time_claude2_20261010-0321.jpg",
+      "images": [],
+      "description": "세 번째 개인전(2021, 갤러리수락) 도록 표지 작품. 도록 사진에서 접시 부분을 잘라 실었습니다."
+    },
+    {
+      "id": "acacia-and-bird",
+      "title": "아카시아와 새 1 · 2",
+      "year": "2020",
+      "medium": "Painting on porcelain",
+      "size": "26cm",
+      "category": "flower",
+      "featured": false,
+      "image": "/media/acacia_bird_1_claude2_20261010-0321.jpg",
+      "images": ["/media/acacia_bird_2_claude2_20261010-0321.jpg"],
+      "description": ""
+    },
+    {
+      "id": "be-on-a-wild-flower",
+      "title": "Be on a wild flower",
+      "year": "2019",
+      "medium": "Painting on porcelain",
+      "size": "28cm",
+      "category": "flower",
+      "featured": false,
+      "image": "/media/be_on_a_wild_flower_claude2_20261010-0321.jpg",
+      "images": [],
+      "description": ""
+    },
+    {
+      "id": "yellow-and-blue",
+      "title": "Yellow and blue",
+      "year": "2013",
+      "medium": "Painting on porcelain",
+      "size": "22cm",
+      "category": "flower",
+      "featured": false,
+      "image": "/media/yellow_and_blue_claude2_20261010-0321.jpg",
+      "images": [],
+      "description": ""
+    },
+    {
+      "id": "pink-and-violet",
+      "title": "Pink and Violet",
+      "year": "2013",
+      "medium": "Painting on porcelain",
+      "size": "22cm",
+      "category": "flower",
+      "featured": false,
+      "image": "/media/pink_and_violet_claude2_20261010-0321.jpg",
+      "images": [],
+      "description": ""
+    },
+    {
+      "id": "peony-mirror-screen",
+      "title": "목단과 나비 (거울 병풍)",
+      "year": "2025",
+      "medium": "Painting on porcelain panels, 거울, 목재 병풍",
+      "size": "",
+      "category": "panel",
+      "featured": true,
+      "image": "/media/mirror_screen_peony_claude2_20261010-0321.jpg",
+      "images": ["/media/mirror_screen_peony_panel_l_claude2_20261010-0321.jpg", "/media/mirror_screen_peony_panel_r_claude2_20261010-0321.jpg"],
+      "description": ""
+    },
+    {
+      "id": "watermelon-mirror-screen",
+      "title": "수박과 나비 (거울 병풍)",
+      "year": "",
+      "medium": "Painting on porcelain panel, 거울, 목재 병풍",
+      "size": "",
+      "category": "panel",
+      "featured": false,
+      "image": "/media/mirror_screen_watermelon_claude2_20261010-0321.jpg",
+      "images": ["/media/mirror_screen_watermelon_panel_claude2_20261010-0321.jpg"],
+      "description": ""
+    },
+    {
+      "id": "lily-oval",
+      "title": "나리와 나비 (타원 도판)",
+      "year": "",
+      "medium": "Painting on porcelain",
+      "size": "",
+      "category": "panel",
+      "featured": false,
+      "image": "/media/lily_oval_claude2_20261010-0321.jpg",
+      "images": [],
+      "description": ""
+    }
+  ]
+}

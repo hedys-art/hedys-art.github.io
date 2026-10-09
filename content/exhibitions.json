@@ -1,0 +1,104 @@
+{
+  "exhibitions": [
+    {
+      "id": "2025-color",
+      "title": "2025 시민소통전 〈색다른 전시 — 컬러의 미학: 9가지 색으로 그려낸 세계〉",
+      "kind": "group",
+      "start": "2025-08-29",
+      "end": "2025-09-03",
+      "venue": "문화공간 역, 춘천",
+      "image": "",
+      "text": "주최·주관 한국민족미술인협회 춘천지부, 후원 춘천시."
+    },
+    {
+      "id": "2025-mind",
+      "title": "〈마음의 쓰임〉展",
+      "kind": "group",
+      "start": "2025-06-27",
+      "end": "2025-07-02",
+      "venue": "문화공간 역, 춘천",
+      "image": "",
+      "text": "주최 한국민족미술인협회 강원지회."
+    },
+    {
+      "id": "2024-garden",
+      "title": "〈생명의 정원 — 세 가지 색채 속으로〉",
+      "kind": "group",
+      "start": "2024-07-09",
+      "end": "2024-07-28",
+      "venue": "갤러리툰, 춘천",
+      "image": "/media/flower_bouquet_claude2_20261010-0321.jpg",
+      "text": "갤러리툰 초대전. 도자라는 물성으로 작업하는 춘천의 세 작가가 자연을 대하는 서로 다른 시선을 보여 준 전시."
+    },
+    {
+      "id": "2022-solo",
+      "title": "개인전 〈Porcelain painting〉",
+      "kind": "solo",
+      "start": "2022-04-09",
+      "end": "2022-04-30",
+      "venue": "갤러리수락, 춘천",
+      "image": "/media/be_on_a_wild_flower_claude2_20261010-0321.jpg",
+      "text": ""
+    },
+    {
+      "id": "2021-gangneung",
+      "title": "강릉자수 × 청년작가 Contemporary Art Exhibition",
+      "kind": "group",
+      "start": "2021-11-13",
+      "end": "2021-11-24",
+      "venue": "명주예술마당 아트리움, 강릉",
+      "image": "",
+      "text": "강릉자수의 디지털 패턴 이미지를 바탕으로 지역 작가들이 협업해 새 작품으로 만든 전시."
+    },
+    {
+      "id": "2021-solo",
+      "title": "세 번째 개인전 〈Porcelain painting exhibition〉",
+      "kind": "solo",
+      "start": "2021-05-01",
+      "end": "2021-05-15",
+      "venue": "갤러리수락, 춘천",
+      "image": "/media/oppose_time_claude2_20261010-0321.jpg",
+      "text": ""
+    },
+    {
+      "id": "2018-chuncheon",
+      "title": "기획전시 〈춘천의 표정 — 나는 춘천사람이다〉",
+      "kind": "group",
+      "start": "2018-06-05",
+      "end": "2018-06-11",
+      "venue": "춘천문화예술회관",
+      "image": "",
+      "text": "작가와 시민이 함께 도예 작품을 만들어 전시한 시민 참여 미술 축제. 아트 멘토링 멘토로 참여."
+    },
+    {
+      "id": "2015-artfair",
+      "title": "2015 강원아트페어",
+      "kind": "group",
+      "start": "2015-05-27",
+      "end": "2015-07-02",
+      "venue": "춘천문화예술회관 · 원주치악예술관 · 강릉문화예술관",
+      "image": "",
+      "text": ""
+    },
+    {
+      "id": "2014-solo",
+      "title": "두 번째 개인전 〈내 마음의 그림자(Projections of my heart)〉",
+      "kind": "solo",
+      "start": "2014-09-19",
+      "end": "2014-10-03",
+      "venue": "파피루스북갤러리, 춘천",
+      "image": "",
+      "text": ""
+    },
+    {
+      "id": "2013-solo",
+      "title": "포슬린페인팅 초대전",
+      "kind": "solo",
+      "start": "2013-09-02",
+      "end": "2013-09-30",
+      "venue": "춘천 M백화점 M2 cafe",
+      "image": "",
+      "text": ""
+    }
+  ]
+}

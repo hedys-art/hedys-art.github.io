@@ -1,0 +1,159 @@
+# Pages CMS 설정 (https://pagescms.org/docs/configuration/)
+# app.pagescms.org 에 교수님 GitHub 계정으로 들어가 hedys-art/hedys-art.github.io 저장소를 고르면 아래 항목이 입력 양식으로 나타납니다.
+# 이 저장소와 사이트는 누구나 볼 수 있습니다. 주소·전화번호·주민등록번호 같은 개인정보는 적지 않습니다.
+
+media:
+  input: media
+  output: /media
+  rename: safe
+  categories: [image]
+
+content:
+  # ---------- 사이트 기본 정보 ----------
+  - name: site
+    label: "사이트 기본 정보 (첫 화면 문구·연락처)"
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - { name: brand, label: "사이트 이름 (왼쪽 위 제목, 예: Hedy's Atelier)", type: string }
+      - { name: name, label: "작가 이름 (작가 소개에 '작가 ○○'로 나옴)", type: string, required: true }
+      - { name: name_en, label: "작가 이름 옆에 붙일 말 (선택, 비우면 안 나옴)", type: string }
+      - { name: tagline, label: "분야 (왼쪽 위 제목 옆, 예: 포슬린페인팅 · 도자 · 회화)", type: string }
+      - { name: hero_title, label: "첫 화면 큰 제목", type: string }
+      - { name: hero_text, label: "첫 화면 소개 글", type: text }
+      - { name: hero_image, label: "첫 화면 그림", type: image }
+      - { name: hero_caption, label: "첫 화면 그림 설명", type: string }
+      - { name: location, label: "활동 지역", type: string }
+      - { name: instagram, label: "인스타그램 주소 (https://… , 없으면 비움)", type: string }
+      - { name: blog, label: "블로그 주소 (https://… , 없으면 비움)", type: string }
+      - { name: email, label: "문의 메일 (공개됨, 없으면 비움)", type: string }
+      - { name: contact_note, label: "연락처가 없을 때 보일 문구", type: string }
+      - { name: footer, label: "맨 아래 문구", type: string }
+
+  # ---------- 작품 ----------
+  - name: works
+    label: "작품"
+    type: file
+    path: content/works.json
+    format: json
+    fields:
+      - name: categories
+        label: "분류"
+        type: object
+        list: true
+        fields:
+          - { name: id, label: "분류 기호 (영문, 예: silhouette)", type: string, required: true }
+          - { name: label, label: "분류 이름", type: string, required: true }
+      - name: works
+        label: "작품 목록"
+        type: object
+        list: true
+        fields:
+          - { name: id, label: "작품 기호 (영문·숫자·하이픈)", type: string, required: true, pattern: '^[a-z0-9-]+$' }
+          - { name: title, label: "작품명", type: string, required: true }
+          - { name: year, label: "제작 연도", type: string }
+          - { name: medium, label: "재료·기법 (예: Painting on porcelain)", type: string }
+          - { name: size, label: "크기 (예: 28cm)", type: string }
+          - { name: category, label: "분류 기호 (위 분류의 기호와 같게)", type: string }
+          - { name: featured, label: "첫 화면 대표 작품으로", type: boolean }
+          - { name: image, label: "대표 사진", type: image, required: true }
+          - { name: images, label: "사진 더 보기 (선택)", type: image, list: true }
+          - { name: description, label: "작품 설명 (선택)", type: text }
+
+  # ---------- 작가 소개 ----------
+  - name: about
+    label: "작가 소개·작가 노트·약력"
+    type: file
+    path: content/about.json
+    format: json
+    fields:
+      - { name: photo, label: "작가 사진 (선택)", type: image }
+      - { name: intro, label: "소개 글", type: rich-text, options: { format: html } }
+      - { name: statement_title, label: "작가 노트 제목", type: string }
+      - { name: statement, label: "작가 노트", type: rich-text, options: { format: html } }
+      - { name: process_title, label: "작업 과정 제목", type: string }
+      - name: process
+        label: "작업 과정"
+        type: object
+        list: true
+        fields:
+          - { name: title, label: "단계", type: string }
+          - { name: text, label: "설명", type: text }
+      - name: cv
+        label: "약력"
+        type: object
+        list: true
+        fields:
+          - { name: section, label: "항목 (예: 개인전)", type: string }
+          - name: items
+            label: "내용"
+            type: object
+            list: true
+            fields:
+              - { name: year, label: "연도", type: string }
+              - { name: text, label: "내용", type: string }
+
+  # ---------- 전시 ----------
+  - name: exhibitions
+    label: "전시"
+    type: file
+    path: content/exhibitions.json
+    format: json
+    fields:
+      - name: exhibitions
+        label: "전시 목록"
+        type: object
+        list: true
+        fields:
+          - { name: id, label: "전시 기호 (영문·숫자·하이픈, 예: 2026-solo)", type: string, required: true, pattern: '^[a-z0-9-]+$' }
+          - { name: title, label: "전시명", type: string, required: true }
+          - name: kind
+            label: "종류"
+            type: select
+            options:
+              values:
+                - { name: solo, label: "개인전" }
+                - { name: group, label: "단체전" }
+                - { name: fair, label: "아트페어" }
+                - { name: etc, label: "기타" }
+          - { name: start, label: "시작일", type: date }
+          - { name: end, label: "종료일", type: date }
+          - { name: venue, label: "장소", type: string }
+          - { name: image, label: "그림 (선택, 작가 작품 사진만)", type: image }
+          - { name: text, label: "설명 (선택)", type: text }
+
+  # ---------- 소식 ----------
+  - name: news
+    label: "소식"
+    type: file
+    path: content/news.json
+    format: json
+    list: true
+    fields:
+      - { name: id, label: "주소용 이름 (영문·숫자·하이픈)", type: string, required: true, pattern: '^[a-z0-9-]+$' }
+      - { name: date, label: "날짜", type: date, required: true }
+      - { name: title, label: "제목", type: string, required: true }
+      - { name: summary, label: "한 줄 요약", type: text }
+      - { name: image, label: "그림 (선택)", type: image }
+      - { name: body, label: "본문", type: rich-text, options: { format: html } }
+
+  # ---------- 수업·체험 ----------
+  - name: class
+    label: "수업·체험 안내"
+    type: file
+    path: content/class.json
+    format: json
+    fields:
+      - { name: intro, label: "소개 글", type: rich-text, options: { format: html } }
+      - name: programs
+        label: "프로그램"
+        type: object
+        list: true
+        fields:
+          - { name: title, label: "이름", type: string }
+          - { name: who, label: "대상·인원", type: string }
+          - { name: text, label: "설명", type: text }
+          - { name: image, label: "사진 (선택)", type: image }
+      - { name: steps, label: "진행 순서", type: string, list: true }
+      - { name: note, label: "문의 안내 문구", type: text }
